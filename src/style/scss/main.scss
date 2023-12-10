@@ -1,0 +1,22 @@
+@use './vars' as *;
+body {
+    font-family: monospace;
+    background: linear-gradient(-15deg, #150080 0.03%, #d08642);
+    color: $foreground;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box
+}
+
+// quiz styles
+@import './quiz.scss';
+// question styles
+@import './question.scss';
+// resutl styles
+@import "./result.scss";
+// timer styles 
+@import "./timer"

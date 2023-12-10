@@ -1,0 +1,35 @@
+@use './vars' as *;
+.result__container {
+    text-align: center;
+    .result__title {
+        font-size: 1.5rem;
+        letter-spacing: 1.4px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: .5rem;
+        span {
+            color: $primary;
+            font-size: 1.5rem;
+        }
+    }
+    button {
+        background: linear-gradient(50deg, #150080 0.03%, #d08642);
+        color: $bg;
+        border-radius: .75rem;
+        font-size: 1rem;
+        padding: .6rem 2.5rem;
+        outline: none;
+        border: none;
+        margin-top: 1rem;
+        cursor: pointer;
+        &:disabled {
+            background: $bg-accent;
+            color: $disabled;
+            cursor: not-allowed;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use "./vars" as *;
+.quiz__container {
+    width: 500px;
+    background-color: $bg;
+    border-radius: 4px;
+    padding: 1.75rem 3.75rem;
+    position: relative;
+    overflow: hidden;
+    .active__question__number {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $primary;
+    }
+    .total__questions {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $disabled;
+    }
+}

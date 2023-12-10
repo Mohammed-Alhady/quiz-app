@@ -1,0 +1,54 @@
+@use "./vars" as *;
+.question__title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.question__list {
+    margin-top: 1.5rem;
+    .question__list__item {
+        text-decoration: none;
+        list-style: none;
+        color: $foreground;
+        background-color: $bg;
+        border: 1px solid $disabled;
+        border-radius: 1rem;
+        padding: .75rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+    .selected {
+        background: linear-gradient(50deg, #150080 0.03%, #d08642);
+        border-color: $accent;
+        color: $bg;
+    }
+}
+
+.question__input {
+    border: 1px solid $disabled;
+    border-radius: 4px;
+    padding: .75rem 1.5rem;
+    width: 100%;
+}
+
+.question__button {
+    display: flex;
+    justify-content: flex-end;
+    button {
+        background: linear-gradient(50deg, #150080 0.03%, #d08642);
+        color: $bg;
+        border-radius: .75rem;
+        font-size: 1rem;
+        padding: .6rem 2.5rem;
+        outline: none;
+        border: none;
+        margin-top: 1rem;
+        cursor: pointer;
+        &:disabled {
+            background: $bg-accent;
+            color: $disabled;
+            cursor: not-allowed;
+        }
+    }
+}
